@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+Sitemap: https://www.glexpress.id/sitemap.xml

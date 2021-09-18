@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>GLE - Download Mobile App</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-16CGEV4QYZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-16CGEV4QYZ');
+    </script>
+</head>
+<body>
+    <script>
+        function getOS() {
+            var userAgent = window.navigator.userAgent,
+                platform = window.navigator.platform,
+                message = null;
+
+            if (/Android/.test(userAgent)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=id.glexpress.gle';
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = 'https://apps.apple.com/us/app/gle/id1575305633';
+            } else {
+                message = 'GLE only available for iOS and Android, please download directly from your smartphone';
+                window.location.href = 'index.html';
+            }
+            return message;
+        }
+        var ms = getOS();
+        if(ms != null){
+            alert(getOS());
+        }
+        
+    </script>
+</body>
+</html>
